@@ -1,0 +1,35 @@
+{
+    "env": {
+        "rtos-sdk-path-win32" : "${workspaceFolder}/../../ESP8266_RTOS_SDK",
+        "rtos-sdk-path-linux" : "${workspaceFolder}/../../ESP8266_RTOS_SDK",
+        "lib-c" : "D:/msys32/usr/include"
+    },
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/include/*",
+                "${rtos-sdk-path-linux}/components/**",
+                "${rtos-sdk-path-linux}/components/freertos/port/esp8266/include",
+                "${rtos-sdk-path-linux}/components/lwip/include/apps/sntp"
+            ],
+            "intelliSenseMode": "${default}",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/include/*",
+                "${rtos-sdk-path-win32}/components/**",
+                "${rtos-sdk-path-win32}/components/freertos/port/esp8266/include",
+                "${rtos-sdk-path-win32}/components/lwip/include/apps/sntp",
+                "${lib-c}/**"
+
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

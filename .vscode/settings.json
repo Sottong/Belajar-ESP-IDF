@@ -1,0 +1,10 @@
+{
+    "idf.adapterTargetName": "esp8266",
+    "files.associations": {
+        "esp_wifi.h": "c",
+        "esp_netif.h": "c",
+        "multipart_parser.h": "c",
+        "http_parser.h": "c",
+        "unifier.h": "c"
+    }
+}
